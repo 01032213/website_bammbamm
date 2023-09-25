@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<head>
+  <title>Excel Data Display</title>
+  <script>
+    fetch('./assets/database.csv')
+        .then(response => response.text())
+        .then(data => {
+            // Split the CSV data into rows
+            var rows = data.split('\n');
+
+            rows.forEach(row => {
+                    var cells = row.split(',');
+                    var firstElement = cells[0];
+                    
+                    if (firstElement != ''){
+                      // Create a new paragraph element for each first element
+                      var paragraph = document.createElement('p');
+                      paragraph.textContent = 'First element: ' + firstElement;
+                      document.body.appendChild(paragraph);
+                    }
+                    
+                });
+            
+
+            
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+</script>
+</head>
+
+
+<body>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="stats.html">Stats</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Our Team</h2>
+      <!-- Add content about your team -->
+    </section>
+
+    <section>
+      <h2>Our History</h2>
+      <!-- Add content about your team's history -->
+    </section>
+  </main>
+
+  <h1>Excel Data Display</h1>
+  <p>Number from cell A5: <span id="result"></span></p>
+
+
+  <footer>
+    <p>&copy; 2023 BammBamm. All rights reserved.</p>
+  </footer>
+</body>
+</html>

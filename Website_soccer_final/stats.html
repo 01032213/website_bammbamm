@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stats</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Stats</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="stats.html">Stats</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    <h2>Top scorer</h2>
+    <table  >
+      <thead>
+        <tr>
+          <th class="rank_column" >Rank</th>
+          <th >Player</th>
+          <th >Goals</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+
+
+    <h2>Top Assists</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="rank_column" >Rank</th>
+          <th>Player</th>
+          <th>Assits</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody2">
+      </tbody>
+    </table>
+
+    <h2>Top Pre Assists</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="rank_column">Rank</th>
+          <th>Player</th>
+          <th>Assits</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody3">
+      </tbody>
+    </table>
+    <h2>Top MOTM</h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="rank_column">Rank</th>
+          <th>Player</th>
+          <th>MOTM</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody4">
+      </tbody>
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 BammBamm. All rights reserved.</p>
+  </footer>
+
+  <!-- Include the external script -->
+<!-- ... (HTML code) ... -->
+
+<script src="stat_script.js"></script>
+
+<script>
+  // Call the function automatically once the page is loaded
+  window.onload = function() {
+    findMostFrequentWord(7, 3)
+      .then(data => {
+        const tableBody = document.getElementById('tableBody');
+
+        // Loop through the data and create rows and cells
+        data.forEach((item) => {
+          const row = document.createElement('tr'); // Create a table row
+
+          // Create cells for each data item
+          const numberCell = document.createElement('td');
+          numberCell.textContent = item.number;
+
+          const playerCell = document.createElement('td');
+          playerCell.textContent = capitalizeFirstLetter(item.player);
+
+          const goalsCell = document.createElement('td');
+          goalsCell.textContent = item.goals;
+
+          // Append cells to the row
+          row.appendChild(numberCell);
+          row.appendChild(playerCell);
+          row.appendChild(goalsCell);
+
+          // Append row to the table body
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+
+      findMostFrequentWord(8, 3)
+      .then(data => {
+        const tableBody = document.getElementById('tableBody2');
+
+        // Loop through the data and create rows and cells
+        data.forEach((item) => {
+          const row = document.createElement('tr'); // Create a table row
+
+          // Create cells for each data item
+          const numberCell = document.createElement('td');
+          numberCell.textContent = item.number;
+
+          const playerCell = document.createElement('td');
+          playerCell.textContent = capitalizeFirstLetter(item.player);
+
+          const goalsCell = document.createElement('td');
+          goalsCell.textContent = item.goals;
+
+          // Append cells to the row
+          row.appendChild(numberCell);
+          row.appendChild(playerCell);
+          row.appendChild(goalsCell);
+
+          // Append row to the table body
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+      findMostFrequentWord(9, 3)
+      .then(data => {
+        const tableBody = document.getElementById('tableBody3');
+
+        // Loop through the data and create rows and cells
+        data.forEach((item) => {
+          const row = document.createElement('tr'); // Create a table row
+
+          // Create cells for each data item
+          const numberCell = document.createElement('td');
+          numberCell.textContent = item.number;
+
+          const playerCell = document.createElement('td');
+          playerCell.textContent = capitalizeFirstLetter(item.player);
+
+          const goalsCell = document.createElement('td');
+          goalsCell.textContent = item.goals;
+
+          // Append cells to the row
+          row.appendChild(numberCell);
+          row.appendChild(playerCell);
+          row.appendChild(goalsCell);
+
+          // Append row to the table body
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  
+      findMostFrequentWord(10, 3)
+      .then(data => {
+        const tableBody = document.getElementById('tableBody4');
+
+        // Loop through the data and create rows and cells
+        data.forEach((item) => {
+          const row = document.createElement('tr'); // Create a table row
+
+          // Create cells for each data item
+          const numberCell = document.createElement('td');
+          numberCell.textContent = item.number;
+
+          const playerCell = document.createElement('td');
+          playerCell.textContent = capitalizeFirstLetter(item.player);
+
+          const goalsCell = document.createElement('td');
+          goalsCell.textContent = item.goals;
+
+          // Append cells to the row
+          row.appendChild(numberCell);
+          row.appendChild(playerCell);
+          row.appendChild(goalsCell);
+
+          // Append row to the table body
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
+
+  function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
+</script>
+
+<!-- ... (HTML code) ... -->
+
+</body>
+</html>

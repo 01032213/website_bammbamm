@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Games</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="tableContainer">
+        <table id="dataTable">
+            <!-- Header row will be inserted here dynamically -->
+        </table>
+
+    </div>
+
+
+    <script>
+        window.onload = function(){
+        // Function to read CSV file and display data in the table
+        function readCSV(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, true);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4 && rawFile.status === 200) {
+                    callback(rawFile.responseText);
+                } else {
+                    console.error("Failed to load the CSV file:" + file)
+                }
+            
+            };
+            rawFile.send(null);
+        }
+
+        function displayCSVData(csvData) {
+            var lines = csvData.split("\n");
+            var dataTable = document.getElementById("dataTable");
+
+            // Clear the table before adding new data
+            dataTable.innerHTML = "";
+            
+            // Insert the header row
+            var headerRow = dataTable.insertRow();
+            var headers = lines[0].split(",");
+            for (var h = 0; h < Math.min(4, headers.length); h++) { // Add the first four headers as-is
+                var headerCell = document.createElement("th");
+                headerCell.textContent = headers[h];
+                headerRow.appendChild(headerCell);
+            }
+
+
+            // Combine the fifth and sixth column headers in the first row
+            var combinedHeaderCell = document.createElement("th");
+            combinedHeaderCell.textContent = "Score";
+            combinedHeaderCell.colSpan = 2; // Set the colspan for the combined column header
+            headerRow.appendChild(combinedHeaderCell);
+
+            // Insert the rest of the headers
+            for (var h = 6; h < 10; h++) {
+                var headerCell = document.createElement("th");
+                headerCell.textContent = headers[h];
+                headerRow.appendChild(headerCell);
+            }
+
+
+            // Insert data rows
+            for (var i = 1; i < lines.length; i++) {
+                var cells = lines[i].split(",");
+                var nonEmptyDataCells = cells.slice(0, 10).filter(cell => cell.trim() !== "");
+
+                if (nonEmptyDataCells.length > 0) {
+                    var dataRow = dataTable.insertRow();
+                    for (var j = 0, dataIndex = 0; j < 10; j++) {
+                        var dataCell = dataRow.insertCell();
+
+                        if (j === 4) {
+                            // Combine content of the fifth and sixth columns with a ':'
+                            var fourthColumnContent = cells[4].trim();
+                            var fifthColumnContent = cells[5].trim();
+                            var combinedContent = fourthColumnContent + (fifthColumnContent ? ' : ' + fifthColumnContent : '');
+                            dataCell.textContent = combinedContent;
+                            dataCell.colSpan = 2; // Set the colspan for the combined column
+                            j++; // Increment the loop index to skip the fifth column cell
+                        } else if (j == 6) {
+                            dataCell.textContent = nonEmptyDataCells[6]
+                        } else if (j == 7) {
+                            dataCell.textContent = nonEmptyDataCells[7]
+                        } else if (j == 8) {
+                            dataCell.textContent = nonEmptyDataCells[8]
+
+                        } else if (j==9){
+                            dataCell.textContent = nonEmptyDataCells[9]
+                        
+
+                        } else {
+                            dataCell.textContent = nonEmptyDataCells[dataIndex++];
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // Replace "your_file.csv" with the path to your CSV file
+        readCSV('/assets/database.csv', displayCSVData);
+
+
+        };
+    
+    </script>
+
+    <footer>
+        <p>&copy; 2023 BammBamm. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Player: <span id="playerNameHeader"></span></h1>
+  </header>
+
+
+  
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../games.html">Games</a></li>
+    <li><a href="../team.html">Our Team</a></li>
+    <li><a href="../stats.html">Stats</a></li>
+    <li><a href="../History.html">History</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="player_content"><img src="../assets/empty.jpg" alt="John Doe" class="player_image">
+
+  <h2 class="player_name"> <span id="playerName"></span> </h2>
+  <p class="inline"><strong>Function:</strong> Refferee</p>
+
+
+</div>
+
+
+<script src="players_script.js"></script>
+
+<script>
+  var player = 'Sory Coulibaly';
+
+  var splitname = player.split(' ');
+  var firstName = splitname[0];
+
+    document.getElementById('playerNameHeader').textContent = player;
+
+
+    document.getElementById('playerName').textContent = player;
+
+
+
+  // Call the function automatically once the page is loaded
+  window.onload = function() {
+      countOccurrences(7, firstName);
+      countOccurrences(8, firstName); 
+      countOccurrences(9, firstName); 
+      countOccurrences(10,firstName)
+
+  };
+</script>
+
+</body>
+</html>
