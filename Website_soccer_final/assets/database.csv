@@ -1,33 +1,33 @@
-Game,Date,Home,Away,Goals Home,Goals Away,Scorers,Assited,Pre assits,MOTM,,,,,Spelers,Spelers
-1,10/09/2023,BammBamm,De Rickvrienden,4,1,August,August,August,August,,,,,Arno,Arno Kerckaert
-2,17/09/2023,VV Kroonhove,BammBamm,4,9,August,August,August,August,,,,,August,August Van de Gracht
-3,24/09/2023,Fc Veteranen Oost,BammBamm,4,17,Jakob,Jakob,Jakob,Jakob,,,,,Jakob,Jakob Huys
-4,01/10/2023,BammBamm,VV Kroonhove,4,25,Jelle,Jelle,Jelle,Jelle,,,,,Jelle,Jelle Casier
-5,08/10/2023,BammBamm,Sportgroep70,4,33,Jorre ,Jorre ,Jorre ,Jorre ,,,,,Jorre ,Jorre Henau
-6,15/10/2023,Oud Savio,BammBamm,4,41,Jore,Jules,Jules,Jules,,,,,Jules,Jules Van Avermaet
-7,22/10/2023,Cup1,Cup1,4,49,Lennert,Lennert,Lennert,Lennert,,,,,Lennert,Lennert Moons
-8,29/10/2023,bye,bye,4,57,Louis_D,Louis_D,Louis_D,Louis_D,,,,,Louis_D,Louis Dewulf
-9,05/11/2023,BammBamm,Borussia Vake,4,65,Louis_L,Louis_L,Louis_L,Louis_L,,,,,Louis_L,Louis Lanckriet
-10,12/11/2023,Oud Ksa,BammBamm,4,73,Lucas,Lucas,Lucas,Lucas,,,,,Lucas,Lucas Gheldof
-11,19/11/2023,BammBamm,VK Vogelzang,4,81,Milan,Milan,Milan,Milan,,,,,Milan,Milan Calleeuw
-12,26/11/2023,Sport Na Arbeid,BammBamm,4,89,Nemo,Nemo,Nemo,Nemo,,,,,Nemo,Nemo Boulnois
-13,03/12/2023,Cup2,Cup2,4,97,Pieter-Jan,Pieter-Jan,Pieter-Jan,Pieter-Jan,,,,,Pieter-Jan,Pieter-Jan Beernaert
-14,10/12/2023,BammBamm,St.-Joris vrienden,4,105,Quinten,Quinten,Quinten,Quinten,,,,,Quinten,Quinten De Klerck
-15,17/12/2023,bye,bye,4,113,Rembert,Rembert,Rembert,Rembert,,,,,Rembert,Rembert Muylle
-16,07/01/2024,bye,bye,4,121,Ruben,Ruben,Ruben,Ruben,,,,,Ruben,Ruben DeCoster
-17,14/01/2024,De Rickvrienden,BammBamm,4,129,Rune,Rune,Rune,Rune,,,,,Rune,Rune Burggraeve
-18,21/01/2024,bye,bye,4,137,Sa ,Sa ,Sa ,Sa ,,,,,Mirza ,Sa Mirza
-19,28/01/2024,BammBamm,Fc Veteranen Oost,4,145,Senne,Senne,Senne,Senne,,,,,Senne,Senne Suykerbuyk
-20,04/02/2024,BammBamm,VV Kroonhove,4,153,Sory,Sory,Sory,Sory,,,,,Sory,Sory Coulibaly
-21,11/02/2024,Sportgroep70,BammBamm,4,161,Steven ,Steven ,Steven ,Steven ,,,,,Steven ,Steven Franceus
-22,18/02/2024,BammBamm,Sport Na Arbeid,4,169,Tero,Tero,Tero,Tero,,,,,Tero,Tero Kipinoinen
-23,25/02/2024,Cup3,Cup3,4,177,Thibaut,Thibaut,Thibaut,Thibaut,,,,,Thibaut,Thibaut Louwagie
-24,03/03/2024,Borussia Vake,BammBamm,4,185,Thomas,Thomas,Thomas,Thomas,,,,,Thomas,Thomas Van Acker
-25,10/03/2024,BammBamm,VK Vogelzang,4,193,Tibbe,Tibbe,Tibbe,Tibbe,,,,,Tibbe,Tibbe Legein
-26,17/03/2024,BammBamm,Oud KSA,4,201,Viktor,Viktor,Viktor,Viktor,,,,,Viktor,Viktor Baele
-27,24/03/2024,Cup4,Cup4,4,209,Wout,Wout,Wout,Wout,,,,,Wout,Wout Schoonbaert
-28,07/04/2024,VK Vogelzang,BammBamm,,,,,,,,,,,,
-29,14/04/2024,BammBamm,Oud KSA,,,,,,,,,,,,
-30,21/04/2024,St.-Joris vrienden,BammBamm,,,,,,,,,,,,
-31,28/04/2024,Cup5,Cup5,,,,,,,,,,,,
-32, 20/05/2025,,,,,,,,,,,,,,
+Game,Date,Home,Away,Goals Home,Goals Away,Scorers,Assited,Pre assits,MOTM,,,,,Spelers
+1,10/09/2023,BammBamm,De Rickvrienden,4,1,Wout Lucas,Lucas,,,,,,,Arno
+2,17/09/2023,VV Kroonhove,BammBamm,,,,,,,,,,,August
+3,24/09/2023,Fc Veteranen Oost,BammBamm,,,,,,,,,,,Jakob
+4,01/10/2023,BammBamm,VV Kroonhove,,,,,,,,,,,Jelle
+5,08/10/2023,BammBamm,Sportgroep70,,,,,,,,,,,Jorre 
+6,15/10/2023,Oud Savio,BammBamm,,,,,,,,,,,Jules
+7,22/10/2023,Cup1,Cup1,,,,,,,,,,,Lennert
+8,29/10/2023,bye,bye,,,,,,,,,,,Louis_D
+9,05/11/2023,BammBamm,Borussia Vake,,,,,,,,,,,Louis_L
+10,12/11/2023,Oud Ksa,BammBamm,,,,,,,,,,,Lucas
+11,19/11/2023,BammBamm,VK Vogelzang,,,,,,,,,,,Milan
+12,26/11/2023,Sport Na Arbeid,BammBamm,,,,,,,,,,,Nemo
+13,03/12/2023,Cup2,Cup2,,,,,,,,,,,Pieter-Jan
+14,10/12/2023,BammBamm,St.-Joris vrienden,,,,,,,,,,,Quinten
+15,17/12/2023,bye,bye,,,,,,,,,,,Rembert
+16,07/01/2024,bye,bye,,,,,,,,,,,Ruben
+17,14/01/2024,De Rickvrienden,BammBamm,,,,,,,,,,,Rune
+18,21/01/2024,bye,bye,,,,,,,,,,,Mirza 
+19,28/01/2024,BammBamm,Fc Veteranen Oost,,,,,,,,,,,Senne
+20,04/02/2024,BammBamm,VV Kroonhove,,,,,,,,,,,Sory
+21,11/02/2024,Sportgroep70,BammBamm,,,,,,,,,,,Steven 
+22,18/02/2024,BammBamm,Sport Na Arbeid,,,,,,,,,,,Tero
+23,25/02/2024,Cup3,Cup3,,,,,,,,,,,Thibaut
+24,03/03/2024,Borussia Vake,BammBamm,,,,,,,,,,,Thomas
+25,10/03/2024,BammBamm,VK Vogelzang,,,,,,,,,,,Tibbe
+26,17/03/2024,BammBamm,Oud KSA,,,,,,,,,,,Viktor
+27,24/03/2024,Cup4,Cup4,,,,,,,,,,,Wout
+28,07/04/2024,VK Vogelzang,BammBamm,,,,,,,,,,,
+29,14/04/2024,BammBamm,Oud KSA,,,,,,,,,,,
+30,21/04/2024,St.-Joris vrienden,BammBamm,,,,,,,,,,,
+31,28/04/2024,Cup5,Cup5,,,,,,,,,,,
+32, 20/05/2025,,,,,,,,,,,,,
