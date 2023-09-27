@@ -1,161 +1,160 @@
 /* Reset default browser styles */
 body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Basic styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #666;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  nav ul li a:hover {
-    color: black }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .main_picture {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .main_picture img {
-    max-width: 100%;
-    height: auto;
-
-  }
-
-  .profile {
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 5px;
-  }
-
-  .profile img {
-    width: 150px;
-    height: auto;
-  }
-
-  .profile p {
-    margin: 5px 0 0 0;
-    text-decoration: none !important;
-    color: black !important;
-  }
-
-  a {
-    text-decoration: none ;
-  }
-
-
-  th { 
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-  }
-  td,th {
-    border: 1px solid black;
-    padding: 10px;
-    white-space: normal;
-    text-align: center;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-#tableContainer {
-  margin: 20px;
-  flex: 1
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set the body to at least the height of the viewport */
-    margin: 0;
-}
-
-
-footer {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 10px;
-
-}
-
-.player_image {
-  max-width: 200px;
-  max-height: 200px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.player_content {
-
-  text-align: center; 
-}
-
-.player_name{
+.stats_header {
+  margin-top: 25px;
   margin-bottom: 5px;
 }
 
-.inline{
-  margin-top: 5px;
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8; /* Light grey background */
 }
 
-.rank_column{
-  width: 10px;
+header {
+  background-color: #e54d42; /* Red background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.goals_column{
-  width: 10px;
+nav {
+  background-color: #ff6b5e; /* Light red background color */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
-.name_column{
-  width: 100px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e54d42; /* Red color on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #e54d42; /* Red background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.main_picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main_picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+}
+
+a {
+  text-decoration: none ;
+}
+
+.profile p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: black;
+}
+
+.table_stats {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+th {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background-color: #e54d42; /* Red background color */
+  color: #fff;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  white-space: normal;
+  text-align: center;
+}
+
+.player_content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.player_image {
+  margin: 20px;
+}
+
+.player_name {
+  margin: 10px
+}
+
+.inline {
+  margin: 5px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .profile {
+    margin-right: 20px; /* Increased spacing between team members */
+  }
+}
+
