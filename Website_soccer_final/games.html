@@ -69,7 +69,7 @@
             headerRow.appendChild(combinedHeaderCell);
 
             // Insert the rest of the headers
-            for (var h = 6; h < 10; h++) {
+            for (var h = 6; h < 9; h++) {
                 var headerCell = document.createElement("th");
                 headerCell.textContent = headers[h];
                 headerRow.appendChild(headerCell);
@@ -79,11 +79,11 @@
             // Insert data rows
             for (var i = 1; i < lines.length; i++) {
                 var cells = lines[i].split(",");
-                var nonEmptyDataCells = cells.slice(0, 10).filter(cell => cell.trim() !== "");
+                var nonEmptyDataCells = cells.slice(0, 9).filter(cell => cell.trim() !== "");
 
                 if (nonEmptyDataCells.length > 0) {
                     var dataRow = dataTable.insertRow();
-                    for (var j = 0, dataIndex = 0; j < 10; j++) {
+                    for (var j = 0, dataIndex = 0; j <9; j++) {
                         var dataCell = dataRow.insertCell();
 
                         if (j === 4) {
@@ -100,10 +100,6 @@
                             dataCell.textContent = nonEmptyDataCells[7]
                         } else if (j == 8) {
                             dataCell.textContent = nonEmptyDataCells[8]
-
-                        } else if (j==9){
-                            dataCell.textContent = nonEmptyDataCells[9]
-                        
 
                         } else {
                             dataCell.textContent = nonEmptyDataCells[dataIndex++];
