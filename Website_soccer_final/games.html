@@ -94,11 +94,28 @@
                             dataCell.textContent = combinedContent;
                             dataCell.colSpan = 2; // Set the colspan for the combined column
                             j++; // Increment the loop index to skip the fifth column cell
-                        } else if (j == 6) {
-                            dataCell.textContent = nonEmptyDataCells[6]
-                        } else if (j == 7) {
-                            dataCell.textContent = nonEmptyDataCells[7]
-                        } else if (j == 8) {
+                        }
+
+                        else if (j == 6) {
+                                var sixthColumnContent = nonEmptyDataCells[6].split(" ");
+                                for (var k = 0; k < sixthColumnContent.length; k++) {
+                                    var item = sixthColumnContent[k];
+                                    var itemElement = document.createElement("div");
+                                    itemElement.textContent = item;
+                                    dataCell.appendChild(itemElement);
+                                }
+                            }
+                        else if (j == 7) {
+                                var seventhColumnContent = nonEmptyDataCells[7].split(" ");
+                                for (var k = 0; k < seventhColumnContent.length; k++) {
+                                    var item = seventhColumnContent[k];
+                                    var itemElement = document.createElement("div");
+                                    itemElement.textContent = item;
+                                    dataCell.appendChild(itemElement);
+                                }
+                        }
+
+                        else if (j == 8) {
                             dataCell.textContent = nonEmptyDataCells[8]
 
                         } else if (j==9){
