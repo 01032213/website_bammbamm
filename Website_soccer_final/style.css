@@ -136,6 +136,10 @@ td, th {
   width: 33%;
 }
 
+#games td, th {
+  width: auto;
+}
+
 .player_content {
   text-align: center;
   margin-top: 20px;
