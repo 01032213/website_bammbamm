@@ -132,7 +132,7 @@ td, th {
   text-align: center;
 }
 
-.dataTable td, th {
+#games td, th {
   width: 33%;
 }
 
