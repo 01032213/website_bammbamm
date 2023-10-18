@@ -130,6 +130,9 @@ td, th {
   padding: 10px;
   white-space: normal;
   text-align: center;
+}
+
+.dataTable td, th {
   width: 33%;
 }
 
