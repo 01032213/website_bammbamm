@@ -132,7 +132,7 @@ td, th {
   text-align: center;
 }
 
-#games td, th {
+.stats td, th {
   width: 33%;
 }
 
