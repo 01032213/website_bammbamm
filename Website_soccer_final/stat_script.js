@@ -1,6 +1,6 @@
 function findMostFrequentWord(column_number, rank) {
     return new Promise((resolve, reject) => {
-      const wordCountMap = new Map();
+      let wordCountMap = new Map();
   
       fetch('./assets/database.csv')
         .then(response => response.text())
@@ -27,8 +27,11 @@ function findMostFrequentWord(column_number, rank) {
               });
             }
           }
-  
+          
+          wordCountMap.delete('/')
+
           const sortedWords = Array.from(wordCountMap.keys()).sort((a, b) => wordCountMap.get(b) - wordCountMap.get(a));
+
           const data = sortedWords.slice(0, rank).map((word, index) => ({
             number: index + 1,
             player: word,
