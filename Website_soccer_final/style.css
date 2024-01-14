@@ -162,6 +162,18 @@ td, th {
   margin-top: 20px;
 }
 
+.gallery_content img {
+  margin: 10px;
+  max-width: 90%;
+  height: auto;
+}
+
+.gallery_content video {
+  margin: 10px;
+  max-width: 90%;
+  height: auto;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
