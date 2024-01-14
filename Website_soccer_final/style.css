@@ -157,6 +157,11 @@ td, th {
   margin: 5px;
 }
 
+.gallery_content {
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
