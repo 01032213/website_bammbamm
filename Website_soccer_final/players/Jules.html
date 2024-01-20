@@ -1,73 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Team</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
-
+    <title>Team</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../app.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Player: <span id="playerNameHeader"></span></h1>
-  </header>
+    <header-navbar2></header-navbar2>
+    <main>
+        <div class="player_content">
+            <img src="../assets/jules.jpg" alt="John Doe" class="player_image">
+            <h2 class="player_name"> <span id="playerName"></span> </h2>
+            <p class="inline"><strong>Position:</strong> Forward</p>
+            <p class="inline"><strong>Goals:</strong> <span id="result7" class="inline"></span></p>
+            <p class="inline"><strong>Assists:</strong> <span id="result8" class="inline"></span></p>
+            <p class="inline"><strong>Pre assists:</strong> <span id="result9" class="inline"></span></p>
+        </div>
+    </main>
 
+    <custom-footer></custom-footer>
 
-  
-<nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../games.html">Games</a></li>
-    <li><a href="../team.html">Our Team</a></li>
-    <li><a href="../stats.html">Stats</a></li>
-    <li><a href="../history.html">History</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../gallery.html">Gallery</a></li>
-  </ul>
-</nav>
+    <script src="players_script.js"></script>
 
-<div class="player_content"><img src="../assets/jules.jpg" alt="John Doe" class="player_image">
+    <script>
+        var player = 'Jules Van Avermaet';
 
-  <h2 class="player_name"> <span id="playerName"></span> </h2>
-  <p class="inline"><strong>Position:</strong> Forward</p>
-  <p class="inline"><strong>Goals:</strong> <span id="result7" class="inline"></span></p>
-  <p></p>
-  <p class="inline"><strong>Assists:</strong> <span id="result8" class="inline"></span></p>
-  <p></p>
-  <p class="inline"><strong>Pre assists:</strong> <span id="result9" class="inline"></span></p>
-  <p></p>
+        var splitname = player.split(' ');
+        var firstName = splitname[0];
+
+        document.getElementById('playerName').textContent = player;
 
 
 
-</div>
+        // Call the function automatically once the page is loaded
+        window.onload = function () {
+            countOccurrences(7, firstName);
+            countOccurrences(8, firstName);
+            countOccurrences(9, firstName);
+            countOccurrences(10, firstName)
 
-
-<script src="players_script.js"></script>
-
-<script>
-  var player = 'Jules Van Avermaet';
-
-  var splitname = player.split(' ');
-  var firstName = splitname[0];
-
-    document.getElementById('playerNameHeader').textContent = player;
-
-
-    document.getElementById('playerName').textContent = player;
-
-
-
-  // Call the function automatically once the page is loaded
-  window.onload = function() {
-      countOccurrences(7, firstName);
-      countOccurrences(8, firstName); 
-      countOccurrences(9, firstName); 
-      countOccurrences(10,firstName)
-
-  };
-</script>
-
-<footer>
-  <p>&copy; 2023 BammBamm. All rights reserved.</p>
-</footer>
+        };
+    </script>
 
 </body>
+
 </html>
